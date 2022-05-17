@@ -2,18 +2,19 @@
 /* font-family: 'Koulen', cursive;
 font-family: 'Signika Negative', sans-serif; */
 
-html {
+/* html {
   position: relative;
   min-height: 100%;
-}
+} */
 
 * {
   margin: 0rem;
   padding: 0rem;
+  box-sizing: content-box;
 }
 
 .body {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -24,10 +25,11 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
   border-radius: 3rem;
-  width: 900px;
+  gap: 1rem;
   height: 650px;
+  width: 800px;
+  height:px;
   background-color: rgb(114, 221, 247);
 }
 
@@ -37,14 +39,21 @@ html {
   margin-top: 0px;
 }
 .countainer-ganerate {
+  display: grid;
   background-color: rgb(237, 246, 249);
-  width: 700px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
 }
 
 .btn1-container {
   display: flex;
-  gap: 23px;
+}
+
+.container-button {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .btn {
@@ -81,12 +90,8 @@ html {
 }
 
 .footer {
-  position: absolute;
   bottom: 0;
   left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   font-family: "Signika Negative", sans-serif;
 }
@@ -151,36 +156,3 @@ html {
   -webkit-appearance: none;
   margin-top: -20px;
 }
-
-/* .rs-lable{
-      position: relative;
-      transform-origin: center center;
-      display: block;
-      width: 88px;
-      height: 88px;
-      background: transparent;
-      border-radius: 50%;
-      line-height: 30px;
-      text-align: center;
-      font-weight: bold;
-      padding-top: 22px;
-      box-sizing: border-box;
-      border: 2px solid #ffffff;
-      margin-top: 20px;
-      margin-left: -38px;
-      left: attr(value);
-      color: #ffffff;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 36px;
-      font-family: "Signika Negative", sans-serif;
-  }
-  
-  .rs-lable::after {
-      content: "kg";
-      display: block;
-      font-size: 20px;
-      letter-spacing: 0.07em;
-      margin-top: -2px;
-      font-family: "Signika Negative", sans-serif;
-  } */
