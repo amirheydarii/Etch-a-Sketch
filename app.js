@@ -8,7 +8,19 @@ let colorPicker = document.querySelector(".color-picker");
 let containerSlider = document.querySelector(".slider-container");
 let slider = document.querySelector(".slider");
 let displayValue = document.querySelector(".display-value");
+let squares = document.querySelectorAll('.grid-element')
+
+
+
+
+
+slider.addEventListener('input' , () => getSlider(slider , displayValue))
+slider.onchange = (e) => updateSize(e.target.value)
+window.onload = () => squareGnenerator(number)
+// logic
+
 let number = 16
+
 function squareGnenerator(slider) {
     containerGrid.style.gridTemplateColumns = `repeat(${slider}, 1fr)`
     containerGrid.style.gridTemplateRows = `repeat(${slider} , 1fr)`
@@ -23,25 +35,14 @@ function squareGnenerator(slider) {
 }
 
 
-
 function getSlider (slider) {
     displayValue.oninput = this.value;
     displayValue.textContent = `${slider.value} × ${slider.value}`
 }
-
-slider.addEventListener('input' , () => getSlider(slider , displayValue))
-
-
-
 
 function updateSize(value) {
     containerGrid.innerHTML = ''
     squareGnenerator(value)
 }
 
-
-
-
-slider.onchange = (e) => updateSize(e.target.value)
-
-window.onload = () => squareGnenerator(number)
+squares.style.backgroundColor = "#1b2d4a"
