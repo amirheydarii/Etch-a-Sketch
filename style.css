@@ -2,15 +2,10 @@
 /* font-family: 'Koulen', cursive;
 font-family: 'Signika Negative', sans-serif; */
 
-/* html {
-  position: relative;
-  min-height: 100%;
-} */
 
 * {
   margin: 0rem;
   padding: 0rem;
-  box-sizing: content-box;
 }
 
 .body {
@@ -40,13 +35,14 @@ font-family: 'Signika Negative', sans-serif; */
 }
 .countainer-ganerate {
   display: grid;
-  background-color: rgb(237, 246, 249);
+  background-color: #ffffff;
   width: 500px;
   height: 500px;
 }
 
 .btn1-container {
   display: flex;
+  gap: 1.5rem;
 }
 
 .container-button {
@@ -89,14 +85,13 @@ font-family: 'Signika Negative', sans-serif; */
   background-color: rgb(229, 116, 188);
 }
 
-.footer {
-  bottom: 0;
-  left: 0;
-  width: 100%;
+
+.display-value {
+
+  margin: 20px 0px 0px 20px;
   font-family: "Signika Negative", sans-serif;
+  font-size: x-large;
 }
-
-
 
 
 
@@ -106,6 +101,8 @@ font-family: 'Signika Negative', sans-serif; */
 .slider {
   width: 200px;
   -webkit-appearance: none;
+  margin-top: 2rem;
+  margin-left: -3rem;
 }
 
 .slider:focus {
