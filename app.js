@@ -18,7 +18,7 @@ slider.onchange = (e) => updateSize(e.target.value)
 window.onload = () => squareGnenerator(number)
 // logic
 
-
+let number = 16
 function squareGnenerator(slider) {
     containerGrid.style.gridTemplateColumns = `repeat(${slider}, 1fr)`
     containerGrid.style.gridTemplateRows = `repeat(${slider} , 1fr)`
